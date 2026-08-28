@@ -1,0 +1,6 @@
+{
+  "name": "Discord Join Notifier SaaS",
+  "description": "Multi-tenant Discord member-join notification SaaS with Telegram licensing system and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
