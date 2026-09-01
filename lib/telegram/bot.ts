@@ -1,5 +1,5 @@
 import { Bot, Context } from 'grammy';
-import { activateLicense, getLicenseByTelegramUser, verifyCodeEligibility } from '../db/repositories/license';
+import { activateLicense, getLicenseByTelegramUser, verifyCodeEligibility } from '../repositories/license';
 import { logger } from '../logger';
 
 export interface PendingActivation {

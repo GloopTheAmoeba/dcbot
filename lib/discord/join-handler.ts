@@ -1,5 +1,5 @@
-import { getGuildConfigForBot } from '../db/repositories/discord';
-import { logBotEvent } from '../db/repositories/event-log';
+import { getGuildConfigForBot } from '../repositories/discord';
+import { logBotEvent } from '../repositories/event-log';
 import {
   DiscordMemberDetails,
   buildJoinNotificationEmbed,

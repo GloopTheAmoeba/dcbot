@@ -1,6 +1,6 @@
-import { query, transaction } from '../client';
-import { hashActivationCode } from '../../security/codes';
-import { logger } from '../../logger';
+import { query, transaction } from '../db/client';
+import { hashActivationCode } from '../security/codes';
+import { logger } from '../logger';
 
 export interface LicenseActionResult {
   success: boolean;

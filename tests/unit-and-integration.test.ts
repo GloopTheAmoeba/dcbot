@@ -2,15 +2,15 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { setUseMemoryDb, memoryDb } from '../lib/db/client';
 import { runMigrations } from '../lib/db/migrations';
-import { createCustomer, getCustomers, getCustomerById } from '../lib/db/repositories/customer';
+import { createCustomer, getCustomers, getCustomerById } from '../lib/repositories/customer';
 import {
   activateLicense,
   renewLicense,
   updateLicenseStatus,
   isLicenseActive,
   getLicenseByTelegramUser,
-} from '../lib/db/repositories/license';
-import { registerGuild, updateGuildChannel, getGuildConfigForBot } from '../lib/db/repositories/discord';
+} from '../lib/repositories/license';
+import { registerGuild, updateGuildChannel, getGuildConfigForBot } from '../lib/repositories/discord';
 import { calculatePreciseAccountAge, getSnowflakeCreationDate } from '../lib/discord/formatter';
 import { processMemberJoinEvent, ChannelMessageSender } from '../lib/discord/join-handler';
 import { generateActivationCode } from '../lib/security/codes';
@@ -777,5 +777,3 @@ test.after(() => {
     process.exit(0);
   }, 100);
 });
-
-

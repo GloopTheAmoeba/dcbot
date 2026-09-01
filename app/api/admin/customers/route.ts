@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAccess } from '@/lib/security/auth';
-import { createCustomer, getCustomers } from '@/lib/db/repositories/customer';
+import { createCustomer, getCustomers } from '@/lib/repositories/customer';
 import { logger } from '@/lib/logger';
 
 export async function GET(req: NextRequest) {

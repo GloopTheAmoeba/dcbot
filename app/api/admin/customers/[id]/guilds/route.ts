@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAccess } from '@/lib/security/auth';
-import { registerGuild, updateGuildChannel } from '@/lib/db/repositories/discord';
+import { registerGuild, updateGuildChannel } from '@/lib/repositories/discord';
 import { logger } from '@/lib/logger';
 
 export async function POST(

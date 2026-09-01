@@ -1,5 +1,5 @@
-import { query, transaction } from '../client';
-import { logger } from '../../logger';
+import { query, transaction } from '../db/client';
+import { logger } from '../logger';
 
 export interface GuildConfigRecord {
   guild_id: string;

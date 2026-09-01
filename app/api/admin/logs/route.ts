@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAccess } from '@/lib/security/auth';
-import { getRecentBotEvents } from '@/lib/db/repositories/event-log';
+import { getRecentBotEvents } from '@/lib/repositories/event-log';
 import { logger } from '@/lib/logger';
 
 export async function GET(req: NextRequest) {

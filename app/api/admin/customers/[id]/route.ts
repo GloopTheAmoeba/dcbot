@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAccess } from '@/lib/security/auth';
-import { getCustomerById, updateCustomer } from '@/lib/db/repositories/customer';
-import { getCustomerGuilds } from '@/lib/db/repositories/discord';
-import { getLicenseEvents } from '@/lib/db/repositories/event-log';
+import { getCustomerById, updateCustomer } from '@/lib/repositories/customer';
+import { getCustomerGuilds } from '@/lib/repositories/discord';
+import { getLicenseEvents } from '@/lib/repositories/event-log';
 import { logger } from '@/lib/logger';
 
 export async function GET(

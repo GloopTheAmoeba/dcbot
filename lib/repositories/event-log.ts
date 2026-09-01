@@ -1,4 +1,4 @@
-import { query } from '../client';
+import { query } from '../db/client';
 
 export interface BotEventRecord {
   id: string;

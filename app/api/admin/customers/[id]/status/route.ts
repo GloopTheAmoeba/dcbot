@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAccess } from '@/lib/security/auth';
-import { updateLicenseStatus } from '@/lib/db/repositories/license';
+import { updateLicenseStatus } from '@/lib/repositories/license';
 import { logger } from '@/lib/logger';
 
 export async function POST(

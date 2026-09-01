@@ -1,5 +1,5 @@
-import { query, transaction } from '../client';
-import { generateActivationCode, hashActivationCode } from '../../security/codes';
+import { query, transaction } from '../db/client';
+import { generateActivationCode, hashActivationCode } from '../security/codes';
 
 export interface CustomerRecord {
   id: string;
